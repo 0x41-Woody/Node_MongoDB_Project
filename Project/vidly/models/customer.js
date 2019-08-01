@@ -33,7 +33,7 @@ function validateCustomer(customer) {
             .max(50)
             .required(),
         isGold: Joi
-            .Boolean(),
+            .boolean(),
     };
     return result = Joi.validate(customer, schema);
 }
